@@ -1,23 +1,21 @@
 # Bubble Bliss
 
-A static single-page web application for sparkling wine and cocktail enthusiasts. Browse curated articles, discover 50 sparkling wine recipes with detailed ingredients and serving instructions, and filter by scenarios like Romantic Dinner, Beach Day, or Rooftop Party.
+A web application for sparkling wine and cocktail enthusiasts. Browse curated articles, discover 50 sparkling wine recipes with detailed ingredients and serving instructions, and filter by scenarios like Romantic Dinner, Beach Day, or Rooftop Party.
 
 ## Features
 
-- **Article Carousel** — Horizontally scrollable knowledge cards about champagne, prosecco, cava, and more
+- **Article** — Horizontally scrollable knowledge cards about champagne, prosecco, cava, and more
 - **Smart Search** — Real-time filtering across wine name, description, recipe, scenario, and mood
 - **Wine Menu** — Grid layout with scenario-based filtering (15 distinct scenarios)
 - **Wine Detail** — Full recipe, ABV, mood, and scenario for each of the 50 wines
-- **Bubble Animation** — Floating bubble background with randomized motion
-- **Responsive Design** — Mobile-friendly with collapsible navigation
 
 ## Pages
 
 | Page | Route | Description |
 |------|-------|-------------|
-| Home | `/` | Article carousel, search, featured wines |
+| Home | `/` | Article, search, featured wines |
 | Article Detail | `/knowledge/:id` | Full article reading |
-| Menu | `/menu` | All wines with scenario filter |
+| Wine Menu | `/menu` | All wines with scenario filter |
 | Wine Detail | `/menu/:id` | Wine recipe and details |
 
 ## Tech Stack
@@ -93,11 +91,3 @@ npm run build
 # Preview production build
 npm run preview
 ```
-
-## Deployment
-
-The app uses Hash routing, making it compatible with any static hosting service:
-
-- **Vercel** — Import repository, default settings work out of the box
-- **Netlify** — Drag and drop the `dist/` folder or connect repository
-- **GitHub Pages** — Push `dist/` contents to `gh-pages` branch

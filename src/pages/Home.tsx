@@ -40,33 +40,10 @@ const Home = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="font-display text-5xl md:text-7xl font-bold text-caramel mb-4"
+          className="font-display text-4xl md:text-5xl font-bold text-caramel text-center mb-8"
         >
-          Bubble Bliss
+          Your Sparkling Wine
         </motion.h1>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="text-xl md:text-2xl text-caramel/70 font-medium italic"
-        >
-          Sparkling Sips, Island Vibes.
-        </motion.p>
-      </section>
-
-      <section className="mb-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-caramel">
-              Bubbly Knowledge
-            </h2>
-          </div>
-          <HorizontalCarousel>
-            {articles.map((article) => (
-              <ArticleCard key={article.id} article={article} />
-            ))}
-          </HorizontalCarousel>
-        </div>
       </section>
 
       <section className="mb-16 px-4">
@@ -77,7 +54,7 @@ const Home = () => {
         />
       </section>
 
-      <section className="px-4">
+      <section className="mb-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-6">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-caramel">
@@ -103,6 +80,21 @@ const Home = () => {
               </p>
             </div>
           )}
+        </div>
+      </section>
+
+      <section className="px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-caramel">
+              Sparkling Knowledge
+            </h2>
+          </div>
+          <HorizontalCarousel>
+            {articles.map((article) => (
+              <ArticleCard key={article.id} article={article} />
+            ))}
+          </HorizontalCarousel>
         </div>
       </section>
     </motion.div>

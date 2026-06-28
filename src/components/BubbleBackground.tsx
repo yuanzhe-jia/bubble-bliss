@@ -40,6 +40,22 @@ const BubbleBackground = () => {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
       <div className="absolute inset-0 bg-gradient-to-br from-cloud via-seafoam/10 to-sunshine/20" />
+
+      {/* Background image anchored to bottom, faded at top via mask-image */}
+      <div
+        className="absolute inset-x-0 bottom-0"
+        style={{
+          height: '60vh',
+          backgroundImage: 'url(/images/background.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'bottom center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.7,
+          WebkitMaskImage: 'linear-gradient(to top, black 20%, transparent 100%)',
+          maskImage: 'linear-gradient(to top, black 20%, transparent 100%)',
+        }}
+      />
+
       {bubbles.map((bubble) => (
         <motion.div
           key={bubble.id}

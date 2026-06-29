@@ -26,7 +26,7 @@ const Menu = () => {
       className="pt-24 pb-8 px-4"
     >
       <div className="max-w-7xl mx-auto">
-        <h1 className="font-display text-4xl md:text-5xl font-bold text-caramel text-center mb-8">
+        <h1 className="font-display text-4xl md:text-5xl text-caramel text-center mb-8">
           Wine Menu
         </h1>
 

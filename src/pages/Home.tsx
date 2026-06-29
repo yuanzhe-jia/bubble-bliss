@@ -42,7 +42,7 @@ const Home = () => {
           transition={{ delay: 0.2 }}
           className="font-display text-4xl md:text-5xl font-bold text-caramel text-center mb-8"
         >
-          Sparkling Home
+          Wine Home
         </motion.h1>
       </section>
 
@@ -87,7 +87,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-6">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-caramel">
-              Sparkling Knowledge
+              Wine Knowledge
             </h2>
           </div>
           <HorizontalCarousel>
